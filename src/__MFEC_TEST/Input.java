@@ -25,19 +25,19 @@ public class Input {
 	public String getEndDT() {
 		return endDT;
 	}
-	
+
 	public String getStartDate() {
 		return startDate;
 	}
-	
+
 	public String getEndDate() {
 		return endDate;
 	}
-	
+
 	public String getStartTime() {
 		return startTime;
 	}
-	
+
 	public String getEndTime() {
 		return endTime;
 	}

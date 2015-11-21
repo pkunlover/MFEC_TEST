@@ -102,11 +102,7 @@ public class Main {
 		System.out.printf("|  No.\tName.\t\t\tNol\t\tOT\t\tLate\t\tTotal\t\t|");
 		System.out.printf(
 				"\n|===============================================================================================|\n");
-		for (
-
-		int i = 0; i < arlSaTotal.size(); i++)
-
-		{
+		for (int i = 0; i < arlSaTotal.size(); i++) {
 			System.out.print("|  " + (i + 1) + "\t");
 			System.out.print(arlSaTotal.get(i).getName() + "  \t\t" + dcf.format(arlSaTotal.get(i).getNolSalaries())
 					+ "  \t" + dcf.format(arlSaTotal.get(i).getOtSalaries()) + "    \t"

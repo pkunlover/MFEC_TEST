@@ -15,15 +15,15 @@ public class Total {
 	public double getTotalSalaries() {
 		return total_sal;
 	}
-	
+
 	public double getNolSalaries() {
 		return nol_sal;
 	}
-	
+
 	public double getOtSalaries() {
 		return ot_sal;
 	}
-	
+
 	public double getLateSalaries() {
 		return late_sal;
 	}
