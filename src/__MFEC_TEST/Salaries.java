@@ -23,15 +23,30 @@ public class Salaries {
 	}
 
 	void NomalLateSalaries() {
-		late_sal = nol_sal_per_Min * late_Min;
+		late_sal = 0 - (nol_sal_per_Min * late_Min);
 	}
 
 	public double getSalaries() {
 		NomalSalaries();
 		NomalOtSalaries();
 		NomalLateSalaries();
-		total_sal = nol_sal + ot_sal - late_sal;
+		total_sal = nol_sal + ot_sal + late_sal;
 		return total_sal;
+	}
+
+	public double getNolSalaries() {
+		NomalSalaries();
+		return nol_sal;
+	}
+
+	public double getOtSalaries() {
+		NomalSalaries();
+		return ot_sal;
+	}
+
+	public double getLateSalaries() {
+		NomalSalaries();
+		return late_sal;
 	}
 
 	public String getName() {

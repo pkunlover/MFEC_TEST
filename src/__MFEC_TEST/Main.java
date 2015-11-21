@@ -64,23 +64,29 @@ public class Main {
 		}
 		for (int i = 0; i < hNum; i++) {
 			double tmpSal = 0;
+			double tmpNolSal = 0;
+			double tmpOtSal = 0;
+			double tmpLateSal = 0;
 			for (int j = i + 0; j < arlIn.size(); j += hNum) {
 				if (arlSa.get(i).getName().equals(arlSa.get(j).getName())) {
 					tmpSal += arlSa.get(j).getSalaries();
+					tmpNolSal += arlSa.get(j).getNolSalaries();
+					tmpOtSal += arlSa.get(i).getOtSalaries();
+					tmpLateSal += arlSa.get(i).getLateSalaries();
 				}
 			}
-			arlSaTotal.add(new Total(arlSa.get(i).getName(), tmpSal));
+			arlSaTotal.add(new Total(arlSa.get(i).getName(), tmpSal, tmpNolSal, tmpOtSal, tmpLateSal));
 		}
-		System.out.printf("|===============================================|\n");
-		System.out.printf("|  No.\t  Name.\t\t\t  Salaries\t|");
-		System.out.printf("\n|===============================================|\n");
+		System.out.printf("|=======================================================================|\n");
+		System.out.printf("|  No.\tName.\t\t\tNol\tOT\tLate\tTotal\t\t|");
+		System.out.printf("\n|=======================================================================|\n");
 		for (int i = 0; i < arlSaTotal.size(); i++) {
 			System.out.print("|  " + (i + 1) + "\t");
-			System.out.print("       " + arlSaTotal.get(i).getName() + "            \t  "
-					+ arlSaTotal.get(i).getSalariesTotal());
+			System.out.print(arlSaTotal.get(i).getName() + "  \t\t"
+					+ arlSaTotal.get(i).getNolSalaries() + "\t" + arlSa.get(i).getOtSalaries() + "\t"
+					+ arlSa.get(i).getLateSalaries() + "\t" + arlSaTotal.get(i).getTotalSalaries());
 			System.out.println("    \t|");
-
 		}
-		System.out.printf("|===============================================|\n");
+		System.out.printf("|=======================================================================|\n");
 	}
 }
