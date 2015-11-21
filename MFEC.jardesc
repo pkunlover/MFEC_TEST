@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="MS874" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/BANK_CPE/Desktop/MFEC.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/__MFEC_TEST/MFEC.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/__MFEC_TEST/MFEC.jardesc"/>
+        <javaElement handleIdentifier="=__MFEC_TEST/src"/>
+        <file path="/__MFEC_TEST/working_time.log"/>
+        <file path="/__MFEC_TEST/.classpath"/>
+        <file path="/__MFEC_TEST/.project"/>
+        <file path="/__MFEC_TEST/working_time2.log"/>
+    </selectedElements>
+</jardesc>
