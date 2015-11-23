@@ -51,7 +51,7 @@ public class Main {
 					}
 					if (dS.getDay() == 0 || dS.getDay() == 6) {
 						if ((dS.getTime() < dOT.getTime()) && (dE.getTime() - dS.getTime() != 0)) {
-							nol_Min = (dOT.getTime() - dS.getTime() - 1800000) / 60 / 1000;
+							nol_Min = (dOT.getTime() - dS.getTime()) / 60 / 1000;
 						} else {
 							nol_Min = 0;
 						}
